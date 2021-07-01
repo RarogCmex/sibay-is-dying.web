@@ -4,164 +4,135 @@
   <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, user-scalable=no" />
-      <title>Photo album - Home</title>
+      <title>Сибай умирает... - Home</title>
       <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
-      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/lightslider/css/lightslider.min.css" />
       <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
       <link rel="stylesheet" href="public/core.css" />
       <link rel="stylesheet" href="public/theme.css" />
+      <link rel="stylesheet" href="public/justifiedgallery/justifiedGallery.min.css" />
   </head>
 
   <body>
-
-    <header>
-      <a href="index.html">
-        <h1>Photo album</h1>
-      </a>
-    </header>
     
-    <!--
-      Breadcrumbs of parent albums
-    -->
+    <div id="container">
     
-    <!--
-      Nested albums
-    -->
-    <ul id="galleries">
-     <li>
-       <a href="Panoramy.html">
-         <h3>Панорамы</h3>
-         <div class="meta">
-           3 photos<br />
-           29 Jun 2021 - 29 Jun 2021
-         </div>
-         <ul class="grid"><li><img src="media/thumbs/%D0%9F%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BC%D1%8B/IMG_20210629_192445_PANO.jpg" /></li><li><img src="media/thumbs/%D0%9F%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BC%D1%8B/IMG_20210629_192535_PANO.jpg" /></li><li><img src="media/thumbs/%D0%9F%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BC%D1%8B/IMG_20210629_193646_PANO.jpg" /></li><li><img src="public/missing.png" /></li>     </ul>
-       </a>
-     </li>
-     <li>
-       <a href="Fotografii-s-fotoapparata.html">
-         <h3>Фотографии с фотоаппарата</h3>
-         <div class="meta">
-           29 photos<br />
-           29 Jun 2021 - 29 Jun 2021
-         </div>
-         <ul class="grid"><li><img src="media/thumbs/%D0%A4%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%B8%20%D1%81%20%D1%84%D0%BE%D1%82%D0%BE%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82%D0%B0/DSCN0445.JPG" /></li><li><img src="media/thumbs/%D0%A4%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%B8%20%D1%81%20%D1%84%D0%BE%D1%82%D0%BE%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82%D0%B0/DSCN0447.JPG" /></li><li><img src="media/thumbs/%D0%A4%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%B8%20%D1%81%20%D1%84%D0%BE%D1%82%D0%BE%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82%D0%B0/DSCN0448.JPG" /></li><li><img src="media/thumbs/%D0%A4%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%B8%20%D1%81%20%D1%84%D0%BE%D1%82%D0%BE%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82%D0%B0/DSCN0449.JPG" /></li>     </ul>
-       </a>
-     </li>
-     <li>
-       <a href="Suhaya-zemlya.html">
-         <h3>Сухая земля</h3>
-         <div class="meta">
-           3 photos<br />
-           29 Jun 2021 - 29 Jun 2021
-         </div>
-         <ul class="grid"><li><img src="media/thumbs/%D0%A1%D1%83%D1%85%D0%B0%D1%8F%20%D0%B7%D0%B5%D0%BC%D0%BB%D1%8F/IMG_20210629_200309.jpg" /></li><li><img src="media/thumbs/%D0%A1%D1%83%D1%85%D0%B0%D1%8F%20%D0%B7%D0%B5%D0%BC%D0%BB%D1%8F/IMG_20210629_200315.jpg" /></li><li><img src="media/thumbs/%D0%A1%D1%83%D1%85%D0%B0%D1%8F%20%D0%B7%D0%B5%D0%BC%D0%BB%D1%8F/IMG_20210629_200326.jpg" /></li><li><img src="public/missing.png" /></li>     </ul>
-       </a>
-     </li>
-    </ul>
+      <!--
+        Gallery title
+      -->
+      <header>
+        <h1><a href="index.html">Сибай умирает...</a></h1>
+      </header>
     
-    <!--
-      Render all thumbnails
-    -->
-    <ul id="media">
-        
-          <li data-src="media/large/IMG_20210629_193526.jpg"
-              data-sub-html=""
-              data-download-url="media/large/IMG_20210629_193526.jpg"
-              
-              data-filename="IMG_20210629_193526.jpg"
-        
-            >
-            <a href="media/large/IMG_20210629_193526.jpg">
-              <img src="media/thumbs/IMG_20210629_193526.jpg"
-                   width="120"
-                   height="120"
-                   alt="IMG_20210629_193526.jpg" />
+      <!--
+        Breadcrumbs of parent albums
+      -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="index.html">Home</a>
+      </nav>
+    
+    
+      <!--
+        Nested albums, if any
+      -->
+      <div id="albums" class="justified-gallery">
+            <a href="Panoramy.html">
+              <img src="media/small/%D0%9F%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BC%D1%8B/IMG_20210629_192445_PANO.jpg" alt="">
+              <div class="caption" style="display: inline-block">
+                <h3>Панорамы</h3>
+                <div class="summary">3 photos</div>
+              </div>
             </a>
-          </li>    
-          <li data-src="media/large/IMG_20210629_193529.jpg"
-              data-sub-html=""
-              data-download-url="media/large/IMG_20210629_193529.jpg"
-              
-              data-filename="IMG_20210629_193529.jpg"
-        
-            >
-            <a href="media/large/IMG_20210629_193529.jpg">
-              <img src="media/thumbs/IMG_20210629_193529.jpg"
-                   width="120"
-                   height="120"
-                   alt="IMG_20210629_193529.jpg" />
+            <a href="Fotografii-s-fotoapparata.html">
+              <img src="media/small/%D0%A4%D0%BE%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%B8%20%D1%81%20%D1%84%D0%BE%D1%82%D0%BE%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82%D0%B0/DSCN0445.JPG" alt="">
+              <div class="caption" style="display: inline-block">
+                <h3>Фотографии с фотоаппарата</h3>
+                <div class="summary">29 photos</div>
+              </div>
             </a>
-          </li>    
-          <li data-src="media/large/IMG_20210629_193532.jpg"
-              data-sub-html=""
-              data-download-url="media/large/IMG_20210629_193532.jpg"
-              
-              data-filename="IMG_20210629_193532.jpg"
-        
-            >
-            <a href="media/large/IMG_20210629_193532.jpg">
-              <img src="media/thumbs/IMG_20210629_193532.jpg"
-                   width="120"
-                   height="120"
-                   alt="IMG_20210629_193532.jpg" />
+            <a href="Suhaya-zemlya.html">
+              <img src="media/small/%D0%A1%D1%83%D1%85%D0%B0%D1%8F%20%D0%B7%D0%B5%D0%BC%D0%BB%D1%8F/IMG_20210629_200309.jpg" alt="">
+              <div class="caption" style="display: inline-block">
+                <h3>Сухая земля</h3>
+                <div class="summary">3 photos</div>
+              </div>
             </a>
-          </li>    
-          <li data-src="media/large/IMG_20210629_193607.jpg"
-              data-sub-html=""
-              data-download-url="media/large/IMG_20210629_193607.jpg"
-              
-              data-filename="IMG_20210629_193607.jpg"
-        
-            >
-            <a href="media/large/IMG_20210629_193607.jpg">
-              <img src="media/thumbs/IMG_20210629_193607.jpg"
-                   width="120"
-                   height="120"
-                   alt="IMG_20210629_193607.jpg" />
-            </a>
-          </li>    
-          <li data-src="media/large/IMG_20210629_194703.jpg"
-              data-sub-html=""
-              data-download-url="media/large/IMG_20210629_194703.jpg"
-              
-              data-filename="IMG_20210629_194703.jpg"
-        
-            >
-            <a href="media/large/IMG_20210629_194703.jpg">
-              <img src="media/thumbs/IMG_20210629_194703.jpg"
-                   width="120"
-                   height="120"
-                   alt="IMG_20210629_194703.jpg" />
-            </a>
-          </li>    
-          <li data-src="media/large/IMG_20210629_194707.jpg"
-              data-sub-html=""
-              data-download-url="media/large/IMG_20210629_194707.jpg"
-              
-              data-filename="IMG_20210629_194707.jpg"
-        
-            >
-            <a href="media/large/IMG_20210629_194707.jpg">
-              <img src="media/thumbs/IMG_20210629_194707.jpg"
-                   width="120"
-                   height="120"
-                   alt="IMG_20210629_194707.jpg" />
-            </a>
-          </li></ul>
+      </div>
     
-    <!--
-      Pagination
-    -->
+      <!--
+        All photos and videos
+      -->
+      <ul id="media" class="clearfix justified-gallery">
+          
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/large/IMG_20210629_193526.jpg"data-src="media/large/IMG_20210629_193526.jpg"data-exthumbimage="media/thumbs/IMG_20210629_193526.jpg"data-filename="IMG_20210629_193526.jpg"><a href="media/large/IMG_20210629_193526.jpg"><img
+                      src="media/small/IMG_20210629_193526.jpg"
+                      width="533.3333333333333"
+                      height="300"alt="IMG_20210629_193526.jpg"/>
+              </a>
+          
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/large/IMG_20210629_193529.jpg"data-src="media/large/IMG_20210629_193529.jpg"data-exthumbimage="media/thumbs/IMG_20210629_193529.jpg"data-filename="IMG_20210629_193529.jpg"><a href="media/large/IMG_20210629_193529.jpg"><img
+                      src="media/small/IMG_20210629_193529.jpg"
+                      width="533.3333333333333"
+                      height="300"alt="IMG_20210629_193529.jpg"/>
+              </a>
+          
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/large/IMG_20210629_193532.jpg"data-src="media/large/IMG_20210629_193532.jpg"data-exthumbimage="media/thumbs/IMG_20210629_193532.jpg"data-filename="IMG_20210629_193532.jpg"><a href="media/large/IMG_20210629_193532.jpg"><img
+                      src="media/small/IMG_20210629_193532.jpg"
+                      width="533.3333333333333"
+                      height="300"alt="IMG_20210629_193532.jpg"/>
+              </a>
+          
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/large/IMG_20210629_193607.jpg"data-src="media/large/IMG_20210629_193607.jpg"data-exthumbimage="media/thumbs/IMG_20210629_193607.jpg"data-filename="IMG_20210629_193607.jpg"><a href="media/large/IMG_20210629_193607.jpg"><img
+                      src="media/small/IMG_20210629_193607.jpg"
+                      width="533.3333333333333"
+                      height="300"alt="IMG_20210629_193607.jpg"/>
+              </a>
+          
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/large/IMG_20210629_194703.jpg"data-src="media/large/IMG_20210629_194703.jpg"data-exthumbimage="media/thumbs/IMG_20210629_194703.jpg"data-filename="IMG_20210629_194703.jpg"><a href="media/large/IMG_20210629_194703.jpg"><img
+                      src="media/small/IMG_20210629_194703.jpg"
+                      width="533.3333333333333"
+                      height="300"alt="IMG_20210629_194703.jpg"/>
+              </a>
+          
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/large/IMG_20210629_194707.jpg"data-src="media/large/IMG_20210629_194707.jpg"data-exthumbimage="media/thumbs/IMG_20210629_194707.jpg"data-filename="IMG_20210629_194707.jpg"><a href="media/large/IMG_20210629_194707.jpg"><img
+                      src="media/small/IMG_20210629_194707.jpg"
+                      width="533.3333333333333"
+                      height="300"alt="IMG_20210629_194707.jpg"/>
+              </a>
+          
+          </div>  </ul>
     
-    <!--
-      Zip file link
-    -->
+      <!--
+        Pagination
+      -->
     
+      <!--
+        Zip file link
+      -->
     
-    <!--
-      Optional footer
-    -->
+      <!--
+        Optional footer
+      -->
+    
+    </div>
     <!-- Video loader -->
     <div id="videos">
     </div>
@@ -172,11 +143,13 @@
     <script src="public/videojs/video.min.js"></script>
     <!-- LightGallery -->
     <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightslider/js/lightslider.min.js"></script>
     <script src="public/lightgallery/js/lg-autoplay.js"></script>
     <script src="public/lightgallery/js/lg-pager.js"></script>
     <script src="public/lightgallery/js/lg-thumbnail.js"></script>
     <script src="public/lightgallery/js/lg-video.js"></script>
     <script src="public/lightgallery/js/lg-exif.min.js"></script>
+    <script src="public/justifiedgallery/jquery.justifiedGallery.min.js"></script>
 
     <script>
       $(document).ready(function() {
@@ -186,10 +159,52 @@
           loop : false,
           download: true,
           counter: true,
-          videojs: true
+          videojs: true,
+          exThumbImage: 'data-exthumbimage',
+        });
+
+        // Init justified gallery for albums
+        $("#albums").justifiedGallery({
+          margins: 10,
+          rowHeight: 300,
+          maxRowHeight: 325,
+        });
+
+        // Init justified gallery for photos
+        $("#media").justifiedGallery({
+          selector: '.albumList',
+          waitThumbnailsLoad: false,
+          margins: 10,
+          rowHeight: 250,
+          maxRowHeight: 275,
         });
       });
     </script>
+
+      <script id="slider-js" data-interval="">
+        $(document).ready(function () {
+          let waitTime = 1000;
+
+          try {
+            waitTime = parseInt($("#slider-js").data("interval"));
+          } catch (e) {
+            console.error("Invalid speed value for slider: " + waitTime + "\n" + e);
+          }
+
+          $("#lightSlider").lightSlider({
+            auto: true,
+            loop: true,
+            item: 1,
+            gallery: true,
+            pause: waitTime,
+            onSliderLoad: (el) => {
+              el.lightGallery({
+                selector: "#lightSlider li"
+              })
+            }
+          });
+        });
+      </script>
 
 
   </body>
